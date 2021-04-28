@@ -112,6 +112,7 @@ Result:
 
 
 ### No. 5
+**Scatter Parameter** 
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -125,8 +126,8 @@ np_population = np.array(population)
 # Double np_population
 np_population = np_population * 2
 
-# s is for size
-plt.scatter(gdp_cap, life_exp, s = np_population)
+# s is for size, c is color, alpha is opacity
+plt.scatter(gdp_cap, life_exp, s= np_population, c= col, alpha= 0.8)
 
 plt.xscale('log') 
 plt.xlabel('GDP per Capita [in USD]')
@@ -134,10 +135,16 @@ plt.ylabel('Life Expectancy [in years]')
 plt.title('World Development in 2007')
 plt.xticks([1000, 10000, 100000],['1k', '10k', '100k'])
 
+# Additional customizations
+plt.text(1550, 71, 'India')
+plt.text(5700, 80, 'China')
+plt.grid(True)
+
 plt.show()
 ```
 Result:
 
-![image](https://user-images.githubusercontent.com/49611937/116379844-9b7c0600-a83d-11eb-935c-d83665f18856.png)
+![image](https://user-images.githubusercontent.com/49611937/116384805-6625e700-a842-11eb-9a44-540d734306a5.png)
+
 
 
