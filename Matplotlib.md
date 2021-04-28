@@ -1,5 +1,5 @@
 # Matplotlib Visualization
-
+---
 ### No. 1
 **Line Plot**
 ```python
@@ -21,7 +21,7 @@ Result:
 10.85
 ```
 ![image](https://user-images.githubusercontent.com/49611937/116355655-5ac3c300-a824-11eb-96ac-85b77c0bdccb.png)
-
+---
 ### No. 2
 **Scatter Plot**
 **GDP** is **Gross Domestic Product**. It basically represents the size of the economy of a country divide by the population **you get the GDP per capita**. 
@@ -64,7 +64,7 @@ plt.show()
 Result:
 
 ![image](https://user-images.githubusercontent.com/49611937/116357612-da529180-a826-11eb-9590-4165e454b61e.png)
-
+---
 ### No. 3
 **Histogram**
 
@@ -80,7 +80,7 @@ plt.show()
 Result:
 
 ![image](https://user-images.githubusercontent.com/49611937/116359545-1c7cd280-a829-11eb-81df-9a659a47f592.png)
-
+---
 ### No. 4
 **Title, Labels, Xticks, Yticks**
 
@@ -110,7 +110,7 @@ Result:
 
 ![image](https://user-images.githubusercontent.com/49611937/116377149-18f24700-a83b-11eb-883b-bebdf6878596.png)
 
-
+---
 ### No. 5
 **Scatter Parameter** 
 ```python
