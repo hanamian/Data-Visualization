@@ -180,3 +180,23 @@ Result:
 ![image](https://user-images.githubusercontent.com/49611937/117619177-2099e000-b199-11eb-980c-9b505777213b.png)
 
 ---
+## 7. Histogram
+amount of Customers in Every Region
+```python
+import pandas as pd
+import matplotlib.pyplot as plt
+
+dataset = pd.read_csv('https://storage.googleapis.com/dqlab-dataset/pythonTutorial/online_raw.csv')
+
+plt.hist(dataset['Region'], color = 'orange')
+plt.title('Distribution of Customers', fontsize = 20)
+plt.xlabel('Region Codes', fontsize = 14)
+plt.ylabel('Count Users', fontsize = 14)
+plt.show()
+```
+Result:
+
+![image](https://user-images.githubusercontent.com/49611937/117621190-871ffd80-b19b-11eb-8dad-f7efc99716aa.png)
+
+---
+## 8. 
