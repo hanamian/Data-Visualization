@@ -1,7 +1,6 @@
 # Matplotlib Visualization
 ---
-### No. 1
-**Line Plot**
+### 1. Line Plot
 ```python
 import matplotlib.pyplot as plt
 
@@ -23,8 +22,7 @@ Result:
 ![image](https://user-images.githubusercontent.com/49611937/116355655-5ac3c300-a824-11eb-96ac-85b77c0bdccb.png)
 
 ---
-### No. 2
-**Scatter Plot**
+### 2. Scatter Plot
 **GDP** is **Gross Domestic Product**. It basically represents the size of the economy of a country divide by the population **you get the GDP per capita**. 
 *life_exp* contains the life expectancy for each country.
 *gdp_cap* contains the GDP per capita (i.e. per person) for each country expressed in US Dollars.
@@ -67,8 +65,7 @@ Result:
 ![image](https://user-images.githubusercontent.com/49611937/116357612-da529180-a826-11eb-9590-4165e454b61e.png)
 
 ---
-### No. 3
-**Histogram**
+### 3. Histogram
 
 bins default = 10
 ```python
@@ -84,8 +81,7 @@ Result:
 ![image](https://user-images.githubusercontent.com/49611937/116359545-1c7cd280-a829-11eb-81df-9a659a47f592.png)
 
 ---
-### No. 4
-**Title, Labels, Xticks, Yticks**
+### 4. Title, Labels, Xticks, Yticks
 
 ```python
 import matplotlib.pyplot as plt
@@ -114,8 +110,7 @@ Result:
 ![image](https://user-images.githubusercontent.com/49611937/116377149-18f24700-a83b-11eb-883b-bebdf6878596.png)
 
 ---
-### No. 5
-**Scatter Parameter** 
+### 5. Scatter Parameter
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -149,5 +144,39 @@ Result:
 
 ![image](https://user-images.githubusercontent.com/49611937/116384805-6625e700-a842-11eb-9a44-540d734306a5.png)
 
+---
+## 6. EDA - Data Distribution
+```python
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
 
+dataset = pd.read_csv('https://storage.googleapis.com/dqlab-dataset/pythonTutorial/online_raw.csv')
+dataset.head()
 
+plt.rcParams['figure.figsize']=(13,8)
+
+#Checking the distribution of Customers on Revenue
+plt.subplot(1,2,1)
+sns.countplot(dataset['Revenue'], palette='pastel')
+plt.title('Buy or Not', fontsize=20)
+plt.xlabel('Revenue or Not', fontsize=14)
+plt.ylabel('Count', fontsize=14)
+
+#Checking the distribution of Customers on Weekend
+plt.subplot(1,2,2)
+sns.countplot(dataset['Weekend'], palette='inferno')
+plt.title('Purchase on Weekends', fontsize=20)
+plt.xlabel('Weekend or Not', fontsize=14)
+plt.ylabel('Count', fontsize=14)
+
+plt.show()
+
+```
+Result:
+
+![image](https://user-images.githubusercontent.com/49611937/117619115-0e1fa680-b199-11eb-8a9e-90ddac433067.png)
+
+![image](https://user-images.githubusercontent.com/49611937/117619177-2099e000-b199-11eb-980c-9b505777213b.png)
+
+---
